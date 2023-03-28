@@ -3,7 +3,6 @@ namespace GenericsDemo
 {
     class Program
     {
-
         public static void Main()
         
         {
@@ -19,5 +18,5 @@ namespace GenericsDemo
         }
 
 
-}
+    }
 }
