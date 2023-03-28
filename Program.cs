@@ -6,19 +6,28 @@ namespace GenericsDemo
         public static void Main()
         
         {
-            Console.WriteLine("Please Enter the FirstValue:");
-            var val1 = Console.ReadLine();
-            Console.WriteLine("Please Enter the SecondValue:");
-            var val2 = Console.ReadLine();
-            Console.WriteLine("Please Enter the ThirdValue:");
-            var val3 = Console.ReadLine();
+            int a = 10, b = 20, c = 15;
+            double x = 5.5, y = 7.7, z = 10.0;
+            string p = "Priya", q = "Madhu", r = "Bholi";
 
-            var Value = Refactor1.MaximumNum(val1, val2, val3);
-            Console.WriteLine("{0} is greater", Value);
-            Console.WriteLine("**************************************");
+            FindMax<int> obj = new FindMax<int>(a, b, c);
+            int MaxInt = obj.TestMaximum();
+            Console.WriteLine("Maximum value in integer is: " + MaxInt);
+            Console.WriteLine("****************************************");
 
+            FindMax<double> obj1 = new FindMax<double>(x, y, z);
+            double MaxDouble = obj1.TestMaximum();
+            Console.WriteLine("Maximum value in double is: " + MaxDouble);
+            Console.WriteLine("****************************************");
+
+            FindMax<string> obj2 = new FindMax<string>(p, q, r);
+            string MaxString = obj2.TestMaximum();
+            Console.WriteLine("Maximum value in string is: " + MaxString);
+            Console.WriteLine("****************************************");
         }
 
 
     }
+
+
 }
