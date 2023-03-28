@@ -9,15 +9,15 @@ namespace GenericsDemo
             {
             Console.WriteLine("Welcome to Generic Program");
             Console.WriteLine("Please Enter the FirstValue:");
-            int num1 = Convert.ToInt32(Console.ReadLine());
+            double num1 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Please Enter the SecondValue:");
-            int num2 = Convert.ToInt32(Console.ReadLine());
+            double num2 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Please Enter the ThirdValue:");
-            int num3 = Convert.ToInt32(Console.ReadLine());
-            int val = FindMax.MaximumNum(num1, num2, num3);
+            double num3 = Convert.ToDouble(Console.ReadLine());
+            double val = FloatMax.MaximumNum(num1, num2, num3);
             Console.WriteLine("{0} is greater", val);
         }
 
 
-    }
+}
 }
